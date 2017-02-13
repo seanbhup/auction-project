@@ -1,7 +1,8 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   animation: color-change 30s infinite;
+  // text-align: center;
 }
 
 
@@ -20,6 +21,40 @@ body {
     75%  {color:#f9f9f9;}
     100%  {color:black}
 }
-h1{
-    
+.navbar{
+    background-color:red;
+    height:100px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+
+    text-align:center;
+
+
+}
+
+.brand{
+    height:50px;
+    position:absolute;
+    float:left;
+    margin-right:50px;
+
+}
+
+.logo{
+    // animation: App-logo-spin infinite 2s linear;
+}
+
+.nav-tabs{
+    background-color:black !important;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
