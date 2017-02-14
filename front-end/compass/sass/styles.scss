@@ -1,6 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  animation: color-change 30s infinite;
+  // animation: color-change 30s infinite;
   // text-align: center;
   // background-color: grey !important;
 }
@@ -29,81 +29,155 @@ body {
         transform: rotate(360deg);
     }
 }
-.navbar1{
-    background-color:black;;
-    height:150px;
-    color:white;
-}
-.brand{
-    height:50px;
-    position:absolute;
-    float:left;
-    margin-right:50px;
-}
-.logo{
-    // animation: App-logo-spin infinite 2s linear;
-    width:500px;
-    text-align: center;
-}
-.search-box{
-    width:400px;
-    text-align: center;
-}
-.search-button{
-    width:300px;
-    text-align: center;
-}
-.main-image{
-    height:500px;
-    width:500px;
-    border:1px dashed black;
-}
 
-form{
+
+.navbar{
+    width:100%;
+    height:200px;
+    background-color:white;
     text-align:center;
-    margin-top:17%;
-    input{
-        position:absolute;
-        border:40px ridge !important;
-        background-color:#258EA6;
-        box-shadow: 10px 10px 5px black;
-        color:black;
-        text-align: center;
-        font-size:54px;
-        margin-right: 15px;
-        height:210px;
-        width: 330px;
-        left:600px;
-        animation: border-color-change 10s infinite linear !important;
 
+    .navbar-item{
+        height:50px;
+        padding-top:20px;
+        width:8%;
+        display:inline-block;
+        .ebay-logo{
+            width:100px;
+        }
+        .input-item{
 
-    }
-    input::-webkit-input-placeholder{
-        color: black !important;
-        font-size: 30px;
-    }
-    button{
-        text-align:center;
-        height:210px;
-        width:330px;
-        color:black;
-        background-color:#258EA6 !important;
-        font-size:48px !important;
-        border:40px ridge !important;
-        box-shadow: 10px 10px 5px black;
-        position:absolute;
-        left:1000px;
-        animation: border-color-change 10s infinite linear!important;
+        }
+        .navbar-search-input{
+            margin-top:20px;
+        }
     }
 }
 
-@keyframes border-color-change {
-    0%   {border-color:red;}
-    12%  {border-color:orange;}
-    25%  {border-color:yellow;}
-    37%  {border-color:lightgreen;}
-    50%  {border-color:lightblue}
-    62%  {border-color:purple}
-    75%  {border-color:violet}
-    100%  {border-color:red}
+
+.sub-menu{
+    width:60%auto;
+    height:20px;
+    text-align:center;
+
+    .sub-menu-item{
+        width:8%;
+        display:inline-block;
+
+    }
+    .sub-menu-pipe{
+        font-size:18px;
+    }
 }
+
+hr{
+    width:60%;
+    border-width: 1px;
+    border-color:darkgrey;
+}
+a{
+    // border:1px solid black;
+}
+.landing-page-wrapper{
+    width:60%;
+    text-align:center;
+    height:600px;
+    border:1px solid black;
+    margin:auto;
+}
+
+
+.listing1, .listing2, .listing3{
+    margin-top:45px;
+    margin-bottom:25px;
+    width:25%;
+}
+
+.listing-image{
+    float:left;
+}
+.listing-text{
+    
+}
+
+// REACTBOOTSTRAP NAVBAR STUFF
+// .navbar1{
+//     background-color:black;;
+//     height:150px;
+//     color:white;
+// }
+// .brand{
+//     height:50px;
+//     position:absolute;
+//     float:left;
+//     margin-right:50px;
+// }
+// .logo{
+//     // animation: App-logo-spin infinite 2s linear;
+//     width:500px;
+//     text-align: center;
+// }
+// .search-box{
+//     width:400px;
+//     text-align: center;
+// }
+// .search-button{
+//     width:300px;
+//     text-align: center;
+// }
+// .main-image{
+//     height:500px;
+//     width:500px;
+//     border:1px dashed black;
+// }
+
+
+// SEARCHBAR STUFF
+// form{
+//     text-align:center;
+//     margin-top:17%;
+//     input{
+//         position:absolute;
+//         border:40px ridge !important;
+//         background-color:#258EA6;
+//         box-shadow: 10px 10px 5px black;
+//         color:black;
+//         text-align: center;
+//         font-size:54px;
+//         margin-right: 15px;
+//         height:210px;
+//         width: 330px;
+//         left:600px;
+//         animation: border-color-change 10s infinite linear !important;
+//
+//
+//     }
+//     input::-webkit-input-placeholder{
+//         color: black !important;
+//         font-size: 30px;
+//     }
+//     button{
+//         text-align:center;
+//         height:210px;
+//         width:330px;
+//         color:black;
+//         background-color:#258EA6 !important;
+//         font-size:48px !important;
+//         border:40px ridge !important;
+//         box-shadow: 10px 10px 5px black;
+//         position:absolute;
+//         left:1000px;
+//         animation: border-color-change 10s infinite linear!important;
+//     }
+// }
+//
+// @keyframes border-color-change {
+//     0%   {border-color:red;}
+//     12%  {border-color:orange;}
+//     25%  {border-color:yellow;}
+//     37%  {border-color:lightgreen;}
+//     50%  {border-color:lightblue}
+//     62%  {border-color:purple}
+//     75%  {border-color:violet}
+//     100%  {border-color:red}
+// }

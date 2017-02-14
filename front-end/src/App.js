@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import '../public/stylesheets/styles.css';
-import Navbar1 from "./Navbar.js";
-import Home from "./Home.js";
-import SearchBar from "./containers/SearchBar.js"
+import Navbar1 from "./containers/Navbar.js";
+import LandingPage from "./containers/LandingPage.js";
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        <Navbar1 />
+        <LandingPage />
+        {/* <SearchBar /> */}
+        {/* <div className="main-image"></div> */}
       </div>
     );
   }

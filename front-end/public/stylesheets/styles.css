@@ -1,7 +1,6 @@
 /* line 1, ../../compass/sass/styles.scss */
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  animation: color-change 30s infinite;
 }
 
 @keyframes color-change {
@@ -46,109 +45,69 @@ body {
     transform: rotate(360deg);
   }
 }
-/* line 32, ../../compass/sass/styles.scss */
-.navbar1 {
-  background-color: black;
-  height: 150px;
-  color: white;
+/* line 34, ../../compass/sass/styles.scss */
+.navbar {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  text-align: center;
 }
-
-/* line 37, ../../compass/sass/styles.scss */
-.brand {
+/* line 40, ../../compass/sass/styles.scss */
+.navbar .navbar-item {
   height: 50px;
-  position: absolute;
-  float: left;
-  margin-right: 50px;
+  padding-top: 20px;
+  width: 8%;
+  display: inline-block;
+}
+/* line 45, ../../compass/sass/styles.scss */
+.navbar .navbar-item .ebay-logo {
+  width: 100px;
+}
+/* line 51, ../../compass/sass/styles.scss */
+.navbar .navbar-item .navbar-search-input {
+  margin-top: 20px;
 }
 
-/* line 43, ../../compass/sass/styles.scss */
-.logo {
-  width: 500px;
+/* line 58, ../../compass/sass/styles.scss */
+.sub-menu {
+  width: 60% auto;
+  height: 20px;
   text-align: center;
+}
+/* line 63, ../../compass/sass/styles.scss */
+.sub-menu .sub-menu-item {
+  width: 8%;
+  display: inline-block;
+}
+/* line 68, ../../compass/sass/styles.scss */
+.sub-menu .sub-menu-pipe {
+  font-size: 18px;
 }
 
-/* line 48, ../../compass/sass/styles.scss */
-.search-box {
-  width: 400px;
-  text-align: center;
+/* line 73, ../../compass/sass/styles.scss */
+hr {
+  width: 60%;
+  border-width: 1px;
+  border-color: darkgrey;
 }
 
-/* line 52, ../../compass/sass/styles.scss */
-.search-button {
-  width: 300px;
-  text-align: center;
-}
-
-/* line 56, ../../compass/sass/styles.scss */
-.main-image {
-  height: 500px;
-  width: 500px;
-  border: 1px dashed black;
-}
-
-/* line 62, ../../compass/sass/styles.scss */
-form {
-  text-align: center;
-  margin-top: 17%;
-}
-/* line 65, ../../compass/sass/styles.scss */
-form input {
-  position: absolute;
-  border: 40px ridge !important;
-  background-color: #258EA6;
-  box-shadow: 10px 10px 5px black;
-  color: black;
-  text-align: center;
-  font-size: 54px;
-  margin-right: 15px;
-  height: 210px;
-  width: 330px;
-  left: 600px;
-  animation: border-color-change 10s infinite linear !important;
-}
 /* line 81, ../../compass/sass/styles.scss */
-form input::-webkit-input-placeholder {
-  color: black !important;
-  font-size: 30px;
-}
-/* line 85, ../../compass/sass/styles.scss */
-form button {
+.landing-page-wrapper {
+  width: 60%;
   text-align: center;
-  height: 210px;
-  width: 330px;
-  color: black;
-  background-color: #258EA6 !important;
-  font-size: 48px !important;
-  border: 40px ridge !important;
-  box-shadow: 10px 10px 5px black;
-  position: absolute;
-  left: 1000px;
-  animation: border-color-change 10s infinite linear !important;
+  height: 600px;
+  border: 1px solid black;
+  margin: auto;
 }
 
-@keyframes border-color-change {
-  0% {
-    border-color: red;
-  }
-  12% {
-    border-color: orange;
-  }
-  25% {
-    border-color: yellow;
-  }
-  37% {
-    border-color: lightgreen;
-  }
-  50% {
-    border-color: lightblue;
-  }
-  62% {
-    border-color: purple;
-  }
-  75% {
-    border-color: violet;
-  }
-  100% {
-    border-color: red;
-  }
+/* line 90, ../../compass/sass/styles.scss */
+.listing1, .listing2, .listing3 {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  width: 25%;
+}
+
+/* line 96, ../../compass/sass/styles.scss */
+.listing-image {
+  float: left;
 }

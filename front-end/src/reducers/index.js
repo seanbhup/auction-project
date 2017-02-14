@@ -4,8 +4,8 @@ import MovieReducer from "./MovieReducer.js";
 
 
 const rootReducer = combineReducers({
-    weather: WeatherReducer,
-    movie: MovieReducer
+    // weather: WeatherReducer,
+    // movie: MovieReducer
 });
 
 export default rootReducer;
