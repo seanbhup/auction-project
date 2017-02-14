@@ -38,15 +38,19 @@ body {
     color: black;
   }
 }
-/* line 24, ../../compass/sass/styles.scss */
-.navbar {
-  background-color: red;
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* line 32, ../../compass/sass/styles.scss */
+.navbar1 {
+  background-color: black;
+  height: 150px;
+  color: white;
 }
 
 /* line 37, ../../compass/sass/styles.scss */
@@ -57,16 +61,94 @@ body {
   margin-right: 50px;
 }
 
-/* line 49, ../../compass/sass/styles.scss */
-.nav-tabs {
-  background-color: black !important;
+/* line 43, ../../compass/sass/styles.scss */
+.logo {
+  width: 500px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* line 48, ../../compass/sass/styles.scss */
+.search-box {
+  width: 400px;
+  text-align: center;
+}
+
+/* line 52, ../../compass/sass/styles.scss */
+.search-button {
+  width: 300px;
+  text-align: center;
+}
+
+/* line 56, ../../compass/sass/styles.scss */
+.main-image {
+  height: 500px;
+  width: 500px;
+  border: 1px dashed black;
+}
+
+/* line 62, ../../compass/sass/styles.scss */
+form {
+  text-align: center;
+  margin-top: 17%;
+}
+/* line 65, ../../compass/sass/styles.scss */
+form input {
+  position: absolute;
+  border: 40px ridge !important;
+  background-color: #258EA6;
+  box-shadow: 10px 10px 5px black;
+  color: black;
+  text-align: center;
+  font-size: 54px;
+  margin-right: 15px;
+  height: 210px;
+  width: 330px;
+  left: 600px;
+  animation: border-color-change 10s infinite linear !important;
+}
+/* line 81, ../../compass/sass/styles.scss */
+form input::-webkit-input-placeholder {
+  color: black !important;
+  font-size: 30px;
+}
+/* line 85, ../../compass/sass/styles.scss */
+form button {
+  text-align: center;
+  height: 210px;
+  width: 330px;
+  color: black;
+  background-color: #258EA6 !important;
+  font-size: 48px !important;
+  border: 40px ridge !important;
+  box-shadow: 10px 10px 5px black;
+  position: absolute;
+  left: 1000px;
+  animation: border-color-change 10s infinite linear !important;
+}
+
+@keyframes border-color-change {
+  0% {
+    border-color: red;
   }
-  to {
-    transform: rotate(360deg);
+  12% {
+    border-color: orange;
+  }
+  25% {
+    border-color: yellow;
+  }
+  37% {
+    border-color: lightgreen;
+  }
+  50% {
+    border-color: lightblue;
+  }
+  62% {
+    border-color: purple;
+  }
+  75% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
   }
 }

@@ -1,6 +1,5 @@
 import React, {Component} from "react";
-// import logo from "./logo.svg";
-import logo from "./ebay_logo.png";
+import logo from "./logo.svg";
 import {Nav, NavItem, NavDropdown, MenuItem} from "react-bootstrap";
 
 
@@ -9,26 +8,29 @@ import {Nav, NavItem, NavDropdown, MenuItem} from "react-bootstrap";
 class Navbar1 extends Component{
     render(){
         return(
-            <Nav bsStyle="tabs" activeKey="1" onSelect={this.handleSelect}>
-                <NavItem className="brand" eventKey="1" href="/home"><img src={logo} className="logo" alt="logo" /></NavItem>
-                <NavItem className="search-input" eventKey="2"><input type="text" placeholder="Search"></input></NavItem>
-                <NavItem className="search-button" eventKey="3" href="/item1"><button type="submit" className="btn-warning btn">Search</button></NavItem>
-                <NavDropdown eventKey="4" title="Choose Category" id="nav-dropdown">
-                    <MenuItem eventKey="4.1">Collectibles & Art</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey="4.2">Electronics</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey="4.3">Sporting Goods</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey="4.4">Home & Garden</MenuItem>
-
-                </NavDropdown>
-            </Nav>
+            <div>hello</div>
         )
     }
 }
 
 export default Navbar1
+
+
+{/*<div className="navbar1">
+    <Nav bsStyle="tabs" activeKey="1" onSelect={this.handleSelect}>
+        <NavItem eventKey="1" className="logo" href="/home">Logo</NavItem>
+        <NavItem eventKey="2" className="search-box" title="Item"><input type="text" placeholder=""></input></NavItem>
+        <NavItem eventKey="3" className="search-button" href="/?stuff">Search Submit</NavItem>
+        <NavDropdown eventKey="4" title="Search by Category" id="nav-dropdown">
+            <MenuItem eventKey="4.1">Action</MenuItem>
+            <MenuItem eventKey="4.2">Another action</MenuItem>
+            <MenuItem eventKey="4.3">Something else here</MenuItem>
+            <MenuItem divider />
+            <MenuItem eventKey="4.4">Separated link</MenuItem>
+        </NavDropdown>
+    </Nav>
+</div> */}
+
 
 
 {/* }<div className="navbar">
