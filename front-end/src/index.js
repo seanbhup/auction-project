@@ -5,7 +5,7 @@ import {Provider} from "react-redux";
 import {createStore, applyMiddleware} from "redux";
 import reducers from "./reducers/index.js";
 import reduxPromise from "redux-promise";
-import {Router, Route, hashHistory, IndexRoute} from "react-router";
+import {Router, Route, browserHistory} from "react-router";
 // COMPONENTS
 import App from './App';
 import CreateListing from "./containers/CreateListing.js"
@@ -21,7 +21,7 @@ const theStore = applyMiddleware(reduxPromise)(createStore);
 
 ReactDOM.render(
     <Provider store={theStore(reducers)}>
-        <Router history={hashHistory}>
+        <Router history={browserHistory}>
             <Route path="/" component={App} />
             <Route path="/create_listing" component={CreateListing} />
             <Route path="/login" component={Login} />

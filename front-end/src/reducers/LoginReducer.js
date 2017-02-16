@@ -1,7 +1,7 @@
-var RegisterReducer = function (state = [], action){
+var LoginReducer = function (state = [], action){
     // console.log(action.type);
     switch(action.type){
-        case "REGISTER":
+        case "LOGIN":
             return action.payload;
         default:
     }
@@ -9,4 +9,4 @@ var RegisterReducer = function (state = [], action){
 }
 
 
-export default RegisterReducer;
+export default LoginReducer;

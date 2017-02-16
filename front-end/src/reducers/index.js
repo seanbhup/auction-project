@@ -3,12 +3,14 @@ import GetListingsReducer from "./GetListingsReducer";
 // import WeatherReducer from "./WeatherReducer.js";
 // import MovieReducer from "./MovieReducer.js";
 import RegisterReducer from "./RegisterReducer";
+import LoginReducer from "./LoginReducer";
 
 const rootReducer = combineReducers({
     // weather: WeatherReducer,
     // movie: MovieReducer
     listings: GetListingsReducer,
-    register: RegisterReducer
+    register: RegisterReducer,
+    login: LoginReducer
 });
 
 export default rootReducer;

@@ -1,6 +1,7 @@
 /* line 1, ../../compass/sass/styles.scss */
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #FAF8FA !important;
 }
 
 @keyframes color-change {
@@ -48,8 +49,8 @@ body {
 /* line 34, ../../compass/sass/styles.scss */
 .navbar {
   width: 100%;
-  height: 200px;
-  background-color: white;
+  height: 150px;
+  background-color: #FAF8FA !important;
   text-align: center;
 }
 /* line 40, ../../compass/sass/styles.scss */
@@ -78,42 +79,68 @@ body {
 .sub-menu .sub-menu-item {
   width: 8%;
   display: inline-block;
+  height: 50px;
 }
-/* line 68, ../../compass/sass/styles.scss */
+/* line 69, ../../compass/sass/styles.scss */
 .sub-menu .sub-menu-pipe {
   font-size: 18px;
 }
 
-/* line 73, ../../compass/sass/styles.scss */
-hr {
+/* line 74, ../../compass/sass/styles.scss */
+.nav-hr {
   width: 60%;
   border-width: 1px;
   border-color: darkgrey;
 }
 
-/* line 81, ../../compass/sass/styles.scss */
+/* line 82, ../../compass/sass/styles.scss */
 .landing-page-wrapper {
   width: 60%;
   text-align: center;
-  height: 1000px;
-  border: 1px solid black;
   margin: auto;
 }
 
-/* line 90, ../../compass/sass/styles.scss */
-.listing1, .listing2, .listing3 {
-  margin-top: 45px;
+/* line 91, ../../compass/sass/styles.scss */
+.listing {
+  margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   width: 25%;
-}
-
-/* line 96, ../../compass/sass/styles.scss */
-.listing-image {
-  float: left;
+  display: inline-block;
+  border: 1px dashed lightgrey;
+  height: 400px;
+  background-color: white;
+  box-shadow: 3px 3px 10px #888888;
 }
 
 /* line 103, ../../compass/sass/styles.scss */
-.auction-image {
-  height: 100px;
-  width: 100px;
+.listing-image-wrapper {
+  width: 100%;
+}
+/* line 105, ../../compass/sass/styles.scss */
+.listing-image-wrapper .listing-image {
+  margin-top: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+/* line 114, ../../compass/sass/styles.scss */
+.listing-text-wrapper {
+  width: 100%;
+}
+/* line 116, ../../compass/sass/styles.scss */
+.listing-text-wrapper .listing-text {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 124, ../../compass/sass/styles.scss */
+.listing-text-wrapper .listing-description {
+  margin-top: 10px;
+}
+/* line 128, ../../compass/sass/styles.scss */
+.listing-text-wrapper .listing-hr {
+  border-color: lightgrey;
+  width: 80%;
 }

@@ -16,9 +16,9 @@ class LandingPage extends Component{
         // this.props.getListingsData();
         // console.log(this.props.listingsData);
 
-        var listingAuctions = [];
+        var listings = [];
         this.props.listingsData.map((auction,index)=>{
-            listingAuctions.push(<Auction key={index} item={auction} />);
+            listings.push(<Auction key={index} item={auction} />);
         })
 
         return(
@@ -26,22 +26,10 @@ class LandingPage extends Component{
                 <h2 className="featured-title">
                     Featured
                 </h2>
-                <div>{listingAuctions}</div>
-                <div className="listing-image-wrapper">
-                    <div className="listing1">
-                        <img className="listing1-image" src="http://placehold.it/100x100"></img>
-                        <div className="listing1-text">Item 1 name</div>
-                    </div>
-                    <div className="listing2">
-                        <img className="listing2-image" src="http://placehold.it/100x100"></img>
-                        <div className="listing2-text">Item 2 name</div>
-                    </div>
-                    <div className="listing3">
-                        <img className="listing3-image" src="http://placehold.it/100x100"></img>
-                        <div className="listing3-text">Item 3 name</div>
-                    </div>
-
-
+                <hr></hr>
+                {/* <div>{listings}</div> */}
+                    <div className="listing-image-wrapper">
+                        {listings}
                 </div>
             </div>
         )

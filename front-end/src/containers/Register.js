@@ -32,9 +32,9 @@ class Register extends Component{
         if(this.props.registerResponse.msg === "userNameTaken"){
             var message = "User name is taken";
         }else if(this.props.registerResponse.msg === "userInserted"){
-            var message = "User was Inserted";
+            message = "User was Inserted";
         }else{
-            var message = '';
+            message = '';
         }
         // console.log(this.props.registerAction());
         return(

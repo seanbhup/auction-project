@@ -2,7 +2,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   // animation: color-change 30s infinite;
   // text-align: center;
-  // background-color: grey !important;
+  background-color: #FAF8FA !important;
 }
 
 
@@ -33,8 +33,8 @@ body {
 
 .navbar{
     width:100%;
-    height:200px;
-    background-color:white;
+    height:150px;
+    background-color:#FAF8FA !important;
     text-align:center;
 
     .navbar-item{
@@ -63,6 +63,7 @@ body {
     .sub-menu-item{
         width:8%;
         display:inline-block;
+        height:50px;
 
     }
     .sub-menu-pipe{
@@ -70,7 +71,7 @@ body {
     }
 }
 
-hr{
+.nav-hr{
     width:60%;
     border-width: 1px;
     border-color:darkgrey;
@@ -81,29 +82,56 @@ a{
 .landing-page-wrapper{
     width:60%;
     text-align:center;
-    height:1000px;
-    border:1px solid black;
+    // height:1000px;
+    // border:1px solid black;
     margin:auto;
 }
 
 
-.listing1, .listing2, .listing3{
-    margin-top:45px;
+.listing{
+    margin-top:25px;
     margin-bottom:25px;
+    margin-left:2.5%;
+    margin-right:2.5%;
     width:25%;
+    display:inline-block;
+    border:1px dashed lightgrey;
+    height:400px;
+    background-color:white;
+    box-shadow: 3px 3px 10px #888888;
+}
+.listing-image-wrapper{
+    width:100%;
+    .listing-image{
+        // float:left;
+        margin-top:10px;
+        // border:1px solid black;
+        height:200px;
+        width:200px;
+        // margin:auto;
+    }
+}
+.listing-text-wrapper{
+    width:100%;
+    .listing-text{
+        // height:30px;
+        margin-top:10px;
+        font-weight:bold;
+        font-size:18px;
+        // border-top:1px solid black;
+
+    }
+    .listing-description{
+        margin-top:10px;
+        // border:.5px dashed green;
+    }
+    .listing-hr{
+        // border-width:2px;
+        border-color:lightgrey;
+        width:80%;
+    }
 }
 
-.listing-image{
-    float:left;
-}
-.listing-text{
-
-}
-
-.auction-image{
-    height:100px;
-    width:100px;
-}
 
 // REACTBOOTSTRAP NAVBAR STUFF
 // .navbar1{
