@@ -1,12 +1,32 @@
-import React, {Component} from "react"
+import React, {Component} from "react";
+import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+
+import GetListingsAction from "../actions/GetListingsAction.js"
+import Auction from "../components/Auction.js"
 
 class LandingPage extends Component{
+
+    componentDidMount(){
+        this.props.getListingsData();
+    }
+
     render(){
+        this.props.listingsData;
+        // this.props.getListingsData();
+        // console.log(this.props.listingsData);
+
+        var listingAuctions = [];
+        this.props.listingsData.map((auction,index)=>{
+            listingAuctions.push(<Auction key={index} item={auction} />);
+        })
+
         return(
             <div className="landing-page-wrapper">
                 <h2 className="featured-title">
                     Featured
                 </h2>
+                <div>{listingAuctions}</div>
                 <div className="listing-image-wrapper">
                     <div className="listing1">
                         <img className="listing1-image" src="http://placehold.it/100x100"></img>
@@ -29,4 +49,16 @@ class LandingPage extends Component{
 
 }
 
-export default LandingPage;
+function mapStateToProps(state){
+    return{
+        listingsData: state.listings
+    }
+}
+
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({
+        getListingsData: GetListingsAction
+    }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LandingPage);

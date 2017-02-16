@@ -7,7 +7,7 @@ import {Link} from "react-router";
 
 
 
-class Navbar1 extends Component{
+class Navbar extends Component{
     render(){
         return(
             <div className="navbar">
@@ -23,9 +23,9 @@ class Navbar1 extends Component{
                     <button className="input-item input-button">Search</button>
                 </div>
                 <div className="navbar-item create-listing">
-                    <a href="/login">Login</a>
+                    <Link to="/login">Login</Link>
                     <span> | </span>
-                    <a href="/register">Register</a>
+                    <Link to="/register">Register</Link>
                 </div>
 
                 <hr></hr>
@@ -58,7 +58,7 @@ class Navbar1 extends Component{
     }
 }
 
-export default Navbar1
+export default Navbar
 
 
 {/*<div className="navbar1">

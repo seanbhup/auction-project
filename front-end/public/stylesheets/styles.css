@@ -95,7 +95,7 @@ hr {
 .landing-page-wrapper {
   width: 60%;
   text-align: center;
-  height: 600px;
+  height: 1000px;
   border: 1px solid black;
   margin: auto;
 }
@@ -110,4 +110,10 @@ hr {
 /* line 96, ../../compass/sass/styles.scss */
 .listing-image {
   float: left;
+}
+
+/* line 103, ../../compass/sass/styles.scss */
+.auction-image {
+  height: 100px;
+  width: 100px;
 }

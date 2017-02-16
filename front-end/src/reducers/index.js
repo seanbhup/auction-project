@@ -1,11 +1,14 @@
 import {combineReducers} from "redux";
-import WeatherReducer from "./WeatherReducer.js";
-import MovieReducer from "./MovieReducer.js";
-
+import GetListingsReducer from "./GetListingsReducer";
+// import WeatherReducer from "./WeatherReducer.js";
+// import MovieReducer from "./MovieReducer.js";
+import RegisterReducer from "./RegisterReducer";
 
 const rootReducer = combineReducers({
     // weather: WeatherReducer,
     // movie: MovieReducer
+    listings: GetListingsReducer,
+    register: RegisterReducer
 });
 
 export default rootReducer;
