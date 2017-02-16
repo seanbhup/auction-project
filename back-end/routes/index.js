@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
 var config = require("../config/config.js");
+var randtoken = require("rand-token");
 
 var connection = mysql.createConnection ({
     host: config.host,
@@ -51,7 +52,39 @@ router.post('/register', (req,res,next)=>{
         // console.log(results);
         // console.log("asl;dkghaeogihiasdghlkas;dghaioweg");
     })
-
 });
+
+router.post('/login', (req,res,next)=>{
+    var username = req.body.username;
+    var password = req.body.password;
+    var findUserQuery = "select * from users where username = ?";
+    connection.query(findUserQuery, [username], (error,results,fields)=>{
+        if (error) throw error;
+        if (results.length === 0){
+            res.json({
+                msg: "badUsername"
+            });
+        }else{
+            checkHash = bcrypt.compareSync(password, results[0].password);
+            if (checkHash === false){
+                res.json({
+                    msg: "loginFailure"
+                })
+            }else{
+                var token = randtoken.uid(40);
+                var insertToken = "update users set token=?, token_exp=date_add(now(), interval 1 hour) where username=?";
+                connection.query(insertToken, [token, username], (error,results)=>{
+                    console.log(token);
+                    res.json({
+                        msg: "loginSuccess",
+                        token: token
+                    });
+                });
+            };
+            // console.log(":LKSGHWIOERGHWLEKGH");
+            console.log(checkHash);
+        }
+    });
+})
 
 module.exports = router;
