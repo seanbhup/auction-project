@@ -1,4 +1,4 @@
-var LoginReducer = function (state = [], action){
+var LoginReducer = function (state = null, action){
     // console.log(action.type);
     switch(action.type){
         case "LOGIN":

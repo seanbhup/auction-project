@@ -11,6 +11,7 @@ import App from './App';
 import CreateListing from "./containers/CreateListing.js"
 import Login from "./containers/Login.js";
 import Register from "./containers/Register.js";
+import AuctionItem from "./containers/AuctionItem";
 // STYLES
 import '../public/stylesheets/styles.css';
 
@@ -26,6 +27,7 @@ ReactDOM.render(
             <Route path="/create_listing" component={CreateListing} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <Route path="/auction/:auctionId" component={AuctionItem} />
             {/* <Route path="/search:term" component={Search} /> */}
             {/* this.props.children if you want to add indexroute */}
         </Router>

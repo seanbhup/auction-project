@@ -1,8 +1,21 @@
 import React, {Component} from "react";
 import logo from "../../public/images/ebay_logo.png";
 import {Link} from "react-router";
+import {connect} from "react-redux";
+import Authorization from "../components/Authorization.js";
+
+
 
 class Navbar extends Component{
+    
+
+    componentDidMount(){
+        if (this.props.loginResponse === null){
+
+        }
+        console.log(this.props.loginResponse);
+    }
+
     render(){
         return(
             <div className="navbar">
@@ -18,9 +31,11 @@ class Navbar extends Component{
                     <button className="input-item input-button">Search</button>
                 </div>
                 <div className="navbar-item create-listing">
-                    <Link to="/login">Login</Link>
+
+                    <Authorization />
+                    {/* }<Link to="/login">Login</Link>
                     <span> | </span>
-                    <Link to="/register">Register</Link>
+                    <Link to="/register">Register</Link> */}
                 </div>
 
                 <hr className="nav-hr"></hr>
@@ -53,4 +68,11 @@ class Navbar extends Component{
     }
 }
 
-export default Navbar
+function mapStateToProps(state){
+    console.log(state.login);
+    return{
+        loginResponse: state.login
+    }
+}
+
+export default connect(mapStateToProps,null)(Navbar);

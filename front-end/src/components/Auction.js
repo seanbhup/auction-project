@@ -1,8 +1,10 @@
 import React, {Component} from "react";
+import {Link} from "react-router";
 
 class Auction extends Component{
     render(){
         var auctionItem = this.props.item
+        var auctionLink = "/auction/" + auctionItem.id;
         // console.log(this.props.item);
         return(
                 <div className="listing">
@@ -12,7 +14,7 @@ class Auction extends Component{
 
                     <div className="listing-text-wrapper">
                         <div className="listing-text">
-                            {auctionItem.title}
+                            <Link to={auctionLink}>{auctionItem.title}</Link>
                         </div>
                         <hr className="listing-hr"></hr>
                         <div className="listing-description">

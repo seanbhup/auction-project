@@ -12,13 +12,14 @@ class LandingPage extends Component{
     }
 
     render(){
-        this.props.listingsData;
+        // this.props.listingsData;
         // this.props.getListingsData();
         // console.log(this.props.listingsData);
 
         var listings = [];
         this.props.listingsData.map((auction,index)=>{
-            listings.push(<Auction key={index} item={auction} />);
+            return listings.push(<Auction key={index} item={auction} />);
+
         })
 
         return(
