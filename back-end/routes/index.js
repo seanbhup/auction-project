@@ -100,14 +100,14 @@ router.post("/submitBid", (req,res,next)=>{
     var selectQuery = "select current_bid from auctions where id = ?"
     connection.query(selectQuery, [req.body.auctionItemId], (error,results,fields)=>{
 
-    });if(req.body.bidAmount < results[0].current_bid) || (req.body.bidAmount <  results[0].starting_bid)){
+    });if((req.body.bidAmount < results[0].current_bid) || (req.body.bidAmount <  results[0].starting_bid)){
         res.json({msg: "bidTooLow"})
     }else{
         var getUserIdQuery = "select id form users where token=?";
         connection.query(getUserIdQuery, [req.body.userToken],(error2,results2,fields2)=>{
             if(results2.length > 0){
                 var updateAuctionsQuery = "update auctions set high_bidder_id=?, current_bid=? where id=?";
-                connection.query(updateAuctionsQuery, [results2[0].id], req.body.bidAmount,req.body.auctionItemId],(errors3,results3,fields3)=>{
+                connection.query(updateAuctionsQuery, [results2[0].id], req.body.bidAmount,req.body.auctionItemId,(errors3,results3,fields3)=>{
                     if(error3) throw error3;
                     res.json({
                         msg: 'bidAccepted',
@@ -120,8 +120,6 @@ router.post("/submitBid", (req,res,next)=>{
                 });
             };
         });
-    );
-
 };
 });
 

@@ -50,7 +50,7 @@ class Login extends Component{
                         Login
                     </h2>
                     <form onSubmit={this.loginSubmit}>
-                        <input type="text" placeholder="Username"></input>
+                        <input type="text" required placeholder="Username"></input>
                         <input type="password" placeholder="Password"></input>
                         <button type="submit">Continue</button>
                     </form>
