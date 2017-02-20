@@ -144,3 +144,23 @@ body {
   border-color: lightgrey;
   width: 80%;
 }
+
+/* line 135, ../../compass/sass/styles.scss */
+.pay-now-button {
+  margin-top: 200px;
+}
+
+/* line 139, ../../compass/sass/styles.scss */
+.login-title {
+  margin-bottom: 40px;
+}
+
+/* line 143, ../../compass/sass/styles.scss */
+.register-form {
+  margin-top: 40px;
+}
+/* line 145, ../../compass/sass/styles.scss */
+.register-form .form-input {
+  width: 30%;
+  margin: auto;
+}

@@ -7,13 +7,13 @@ import Authorization from "../components/Authorization.js";
 
 
 class Navbar extends Component{
-    
+
 
     componentDidMount(){
         if (this.props.loginResponse === null){
 
         }
-        console.log(this.props.loginResponse);
+        // console.log(this.props.loginResponse);
     }
 
     render(){
@@ -69,7 +69,7 @@ class Navbar extends Component{
 }
 
 function mapStateToProps(state){
-    console.log(state.login);
+    // console.log(state.login);
     return{
         loginResponse: state.login
     }
