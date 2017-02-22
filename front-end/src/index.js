@@ -12,6 +12,7 @@ import CreateListing from "./containers/CreateListing.js"
 import Login from "./containers/Login.js";
 import Register from "./containers/Register.js";
 import AuctionItem from "./containers/AuctionItem";
+import MyCart from "./containers/MyCart";
 // STYLES
 import '../public/stylesheets/styles.css';
 
@@ -28,6 +29,7 @@ ReactDOM.render(
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/auction/:auctionId" component={AuctionItem} />
+            <Route path="/my-cart" component={MyCart} />
             {/* <Route path="/search:term" component={Search} /> */}
             {/* this.props.children if you want to add indexroute */}
         </Router>

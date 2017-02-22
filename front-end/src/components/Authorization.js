@@ -6,10 +6,18 @@ class Authorization extends Component{
 
         return(
             <div>
-                <Link to="/login">Login</Link>
-                <span> | </span>
-                <Link to="/register">Register</Link>
+                <div>
+                    <Link to="/login">Login</Link>
+                    <span> | </span>
+                    <Link to="/register">Register</Link>
+                    <span> | </span>
+                    <Link to="/my-cart">Cart</Link>
+                </div>
+                {/* <div className="my-cart-wrapper">
+                    <Link to="/my-cart">My Cart</Link>
+                </div> */}
             </div>
+
         )
     }
 }

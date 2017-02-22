@@ -74,7 +74,7 @@ class Register extends Component{
                 <Navbar />
                 <div className="landing-page-wrapper">
                     <h2 className="login-title">
-                        Register
+                        Please enter your registration Info
                         {message}
                     </h2>
                     <hr></hr>
